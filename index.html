@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Men's Fashion world</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="text/javascript" src="js/index.js"></script>
+
+
+</head>
+
+<body class="body">
+  <div id="sidebar">
+    <div class="toggle-btn" onclick="toggleSidebar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>Shirts
+      <li onclick="casual();">Casual </li>
+      <li onclick="formal();">Formal</li>
+      <li onclick="jeans();">Jeans</li>
+    </ul>
+  </div>
+  <div class="" id="cloths-list">
+    <div class="" id="maincasual">
+
+
+    <div class="casualcard">
+      <img src="images/Casual Black Shirt.jpeg" alt="Casual Black Shirt">
+      <br><br>
+    <a href="selection.html"> <p>Casual Black Shirt</p></a>
+    </div>
+    <div class="casualcard">
+      <img src="images/Casual Burlywood Shirt.jpeg" alt="Casual Burlywood Shirt"><br>
+    <br>  <p>Casual Burlywood Shirt</p>
+    </div>
+    <div class="casualcard">
+      <img src="images/Casual Gray Blue Shirt.jpeg" alt="Casual  Gray Blue Shirt">
+    <br> <br> <p>Casual Gray Blue Shirt</p>
+    </div>
+    <div class="casualcard">
+      <img src="images/Casual Pink Shirt.jpeg" alt="Casual Pink Shirt">
+    <br> <br> <p>Casual Pink Shirt</p>
+    </div>
+    </div>
+    <div class="" id="mainformal">
+
+
+    <div class="formalcard">
+      <img src="images/Formal Tropical Voilet Shirt.jpeg" alt="Formal Tropical Voilet Shirt">
+    <br> <br> <p>Formal Tropical Voilet Shirt</p>
+    </div>
+    <div class="formalcard">
+      <img src="images/Formal Blue Voilet Shirt .jpeg" alt="Formal Blue Voilet Shirt">
+      <br>
+      <br>
+      <p>Formal Blue Voilet Shirt</p>
+    </div>
+    <div class="formalcard">
+      <img src="images/Formal Pale Shirt.jpeg" alt="Formal Pale Shirt">
+    <br> <br> <p>Formal Pale Shirt</p>
+    </div>
+    <div class="formalcard">
+      <img src="images/Formal Slate Shirt.jpeg" alt="Formal Slate Shirt">
+    <br><br>  <p>Formal Slate Shirt</p>
+    </div>
+  </div>
+
+<div  id="mainjeans">
+
+
+  </div>
+
+</div>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+       navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, function(err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+  }
+
+  </script>
+</body>
+
+</html>

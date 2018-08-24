@@ -1,0 +1,70 @@
+@media screen and (min-width:360px) and (max-width:640px) {
+  .subpage1.11, .subpage1.12 {
+    text-align: center;
+  }
+  .review {
+    height: 49vh;
+    border: 1px solid red;
+  }
+  .review input {
+    width: 49%;
+    border-radius: 5px;
+    height: 5vh;
+  }
+  .subpage2 {
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .flexstyle {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+  .subpage1.11, .subpage1.12 {
+    text-align: center;
+  }
+  .review {
+    height: 49vh;
+    border: 1px solid red;
+  }
+  .review input {
+    width: 49%;
+    border-radius: 5px;
+    height: 5vh;
+  }
+  .subpage2 {
+    width: 100vw;
+  }
+}
+@media screen and (min-width:1024px) and (max-width:1366px){
+  .flexstyle {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+  .subpage1.11, .subpage1.12 {
+    text-align: center;
+  }
+  .review {
+    height: 49vh;
+    border: 1px solid red;
+  }
+  .review input {
+    width: 49%;
+    border-radius: 5px;
+    height: 5vh;
+  }
+  .fullpage{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+  .subpage1,.subpage2 {
+    width: 50%;
+  height: 100%;
+  }
+}

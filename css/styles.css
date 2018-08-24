@@ -1,0 +1,142 @@
+ * {
+   margin: 0px;
+   padding: 0px;
+   font-family: sans-serif;
+ }
+
+ #sidebar {
+   position: fixed;
+   width: 200px;
+   height: 100%;
+   background: #151414;
+   left: -200px;
+   transition: all 500ms linear;
+ }
+
+ #sidebar.active {
+   left: 0px;
+ }
+
+ #sidebar ul, ul li {
+   color: #ECE9E9;
+   list-style: none;
+   padding: 15px 10px 0;
+   border-bottom: 1px solid lightblue;
+ }
+
+ #sidebar .toggle-btn {
+   position: absolute;
+   left: 220px;
+   top: 20px;
+ }
+
+ #sidebar .toggle-btn span {
+   display: block;
+   width: 40px;
+   height: 5px;
+   background: #151719;
+   margin: 5px 0px;
+ }
+
+ /* Cloths-list*/
+
+ .casualcard, .formalcard, .jeanscard {
+   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
+   width: 250px;
+   height: 300px;
+   text-align: center;
+   margin: 10px;
+ }
+
+ #cloths-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin-left: 270px;
+   margin-top: 10px;
+   background-color: white;
+ }
+
+ #cloths-list p, #jeans p, #mainjeans p {
+   font-style: oblique;
+ }
+
+ /*Media Queries*/
+
+ @media screen and (min-width:360px) and (max-width:640px) {
+   /* body{
+    background:lightblue;
+  } */
+   #cloths-list, #jeans, #mainjeans {
+     margin-left: 0;
+   }
+   #sidebar {
+     height: 25vh;
+     position: relative;
+     width: 80%;
+     left: -80%
+   }
+   #sidebar .toggle-btn {
+     margin-left: 6%;
+     left: 100%;
+   }
+ }
+
+ @media screen and (min-width:768px) and (max-width:1023px) {
+   .casualcard, .formalcard, .jeanscard {
+     box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
+     width: 230px;
+     height: 300px;
+     text-align: center;
+     margin: 10px;
+   }
+   #sidebar {
+     height: 25vh;
+     position: relative;
+     width: 80%;
+     left: -80%
+   }
+   #sidebar .toggle-btn {
+     margin-left: 6%;
+     left: 100%;
+   }
+   #cloths-list {
+     margin-left: 0;
+   }
+
+ }
+
+ @media screen and (min-width:1024px) and (max-width:1366px) {
+   .casualcard, .formalcard, .jeanscard {
+     box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
+     width: 230px;
+     height: 300px;
+     text-align: center;
+     margin: 10px;
+   }
+   #cloths-list {
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-around;
+   }
+   #mainjeans {
+     justify-content: space-between;
+     margin-left: 0px;
+     margin-top: 0px;
+     background-color: white;
+   }
+ }
+@media screen and (min-width:1367px) {
+  #cloths-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  .casualcard, .formalcard, .jeanscard {
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 10px;
+  }
+}

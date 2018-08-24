@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Men's Fashion world</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/second.css">
+<!-- <script src="serviceWorker.js" charset="utf-8"></script> -->
+</head>
+
+<body >
+
+<!-- /*maindiv*/ -->
+  <div class="fullpage">
+<!-- /*two subdives subpage1,subpage2*/ -->
+          <div class="subpage1">
+            <!-- /*two subdives flexstyle,reviews*/ -->
+            <div class="flexstyle">
+              <!-- /*two subdives subpage1.11,subpage1.12*/ -->
+              <div class="subpage1.11">
+                <div class="casualcard">
+                  <img src="images/Casual Black Shirt.jpeg" alt="Casual Black Shirt">
+
+                  <br><br>
+                  <p>Casual Black Shirt</p>
+
+
+                </div>
+              </div>
+              <div class="subpage1.12">
+
+                <h5> Casual Black Shirt suitable for the Men's who are in white color.</h5>
+              <br><br>
+              <p> Normal Cost:Rs:450</p>
+                <br><br>
+
+
+
+<p id="offer">Offer 50%</p>
+<p id="offer">  Buy 225 </p>
+    </div>
+    </div>
+
+    <div class="subpage1.2">
+      <div class="review">
+        <h4>Reviews:</h4>
+        <br><br>
+
+         <div id="feedback1"></div>
+        <input type="text" placeholder="Give your feedback" id="data">
+        <br><br>
+        <input type="button"  onclick="calling()" value="submit">
+      </div>
+
+    </div>
+    </div>
+
+      <div class="subpage2" >
+<!-- casual shirts data as dynamic -->
+
+<p>welcome</p>
+        <div class="casuallist">
+
+        </div>
+      </div>
+
+  </div>
+
+
+  </div>
+<script type="text/javascript" src=js/main.js>
+
+</script>
+<script type="text/javascript">
+function calling(){
+var  a = document.getElementById('data').value;
+//console.log(a);
+ document.getElementById('feedback1').innerHtml='<span>' + a + '</span>' ;
+//alert(a);
+}
+</script>
+<script>
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('/serviceWorker.js')
+             .then(function() {
+                console.log("Service Worker Registered");
+              });
+  }
+  </script>
+
+</body>
+
+</html>
